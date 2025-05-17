@@ -1,5 +1,6 @@
 import { HeroCarousel } from './components/HeroCarousel'
 import Image from 'next/image'
+import { ContactForm } from './components/ContactForm'
 
 const images = [
   {
@@ -96,6 +97,7 @@ export default function Home() {
           <div className="hidden md:block absolute left-1/2 top-[-39px] w-px" style={{ background: '#282828', height: 'calc(340px * 2 + 25px)' }}></div>
         </div>
       </section>
+      <ContactForm />
     </main>
   )
 } 
