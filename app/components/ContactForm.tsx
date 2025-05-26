@@ -19,7 +19,7 @@ export const ContactForm = () => {
   }
 
   const inputClass =
-    'w-full border border-gray-300 bg-gray-50 px-4 py-3 text-base font-montserrat uppercase text-gray-400 focus:outline-none focus:border-black transition placeholder:font-montserrat placeholder:uppercase placeholder:text-gray-300';
+    'w-full border border-gray-300 bg-[#FAFAFA] px-4 py-3 text-base font-montserrat uppercase text-gray-700 focus:outline-none focus:border-black transition placeholder:font-montserrat placeholder:uppercase placeholder:text-gray-600';
 
   return (
     <section className="w-full flex flex-col items-center justify-center mt-24 mb-12 px-0">
@@ -29,7 +29,7 @@ export const ContactForm = () => {
       <div className="w-full flex justify-center mb-12">
         <div className="h-24 w-px bg-gray-400" />
       </div>
-      <form className="w-full max-w-3xl flex flex-col gap-0" onSubmit={handleSubmit} autoComplete="off">
+      <form className="w-full max-w-3xl flex flex-col gap-3" onSubmit={handleSubmit} autoComplete="off">
         <input
           type="text"
           name="nombre"

@@ -46,7 +46,6 @@ export const HeroCarousel = ({ images }: HeroCarouselProps) => {
         onClick={prev}
         aria-label="Anterior"
         className="absolute left-4 top-1/2 -translate-y-1/2 z-20 p-0 m-0 bg-transparent border-none focus:outline-none"
-        style={{}}
       >
         <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-lg opacity-80 hover:opacity-100 transition"><polyline points="15 18 9 12 15 6" /></svg>
       </button>
@@ -55,7 +54,6 @@ export const HeroCarousel = ({ images }: HeroCarouselProps) => {
         onClick={next}
         aria-label="Siguiente"
         className="absolute right-4 top-1/2 -translate-y-1/2 z-20 p-0 m-0 bg-transparent border-none focus:outline-none"
-        style={{}}
       >
         <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="drop-shadow-lg opacity-80 hover:opacity-100 transition"><polyline points="9 6 15 12 9 18" /></svg>
       </button>

@@ -3,20 +3,34 @@ export interface Proyecto {
   titulo: string;
   hero: string;
   imagenes: string[];
+  descripcion?: string;
+  detalles?: string[];
 }
 
 export const proyectos: Proyecto[] = [
   {
-    slug: 'fachada-22',
+    slug: 'casajm',
     titulo: 'Fachada 22',
     hero: '/1. Sede Arq Casa Estancias- Fachada 22.jpg',
     imagenes: ['/1. Sede Arq Casa Estancias- Fachada 22.jpg'],
+    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    detalles: [
+      '228m² cubiertos - 59m² semicubiertos',
+      'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
+      '2022',
+    ],
   },
   {
     slug: 'comedor-5',
     titulo: 'Comedor 5',
     hero: '/4. Sede Arq Casa Estancias- Comedor 5.jpg',
     imagenes: ['/4. Sede Arq Casa Estancias- Comedor 5.jpg'],
+    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    detalles: [
+      '228m² cubiertos - 59m² semicubiertos',
+      'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
+      '2022',
+    ],
   },
   {
     slug: 'cocina-6-editada',
@@ -49,13 +63,13 @@ export const proyectos: Proyecto[] = [
     imagenes: ['/18. Sede Arq Casa Estancias- Arq 9.jpg'],
   },
   {
-    slug: 'living-5',
+    slug: 'ref-callao',
     titulo: 'Living 5',
     hero: '/3. Sede Arq Casa Estancias- Living 5.jpg',
     imagenes: ['/3. Sede Arq Casa Estancias- Living 5.jpg'],
   },
   {
-    slug: 'cocina-6',
+    slug: 'ref-talcahuano',
     titulo: 'Cocina 6',
     hero: '/6. Sede Arq Casa Estancias- Cocina 6.jpg',
     imagenes: ['/6. Sede Arq Casa Estancias- Cocina 6.jpg'],
