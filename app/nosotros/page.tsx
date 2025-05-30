@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { ContactForm } from '../components/ContactForm';
 
 const NosotrosPage = () => {
   return (
@@ -15,7 +16,7 @@ const NosotrosPage = () => {
       </div>
 
       {/* Sección NOSOTROS */}
-      <section className="w-full mt-12 mb-12 flex flex-col items-center">
+      <section className="w-full mt-12 mb-8 flex flex-col items-center">
         <h2 className="text-center text-2xl md:text-3xl font-normal tracking-widest mb-8 font-montserrat">NOSOTROS</h2>
         <div className="w-full flex justify-center mb-12">
           <div className="h-24 w-px bg-gray-400" />
@@ -68,6 +69,9 @@ const NosotrosPage = () => {
 
         </div>
       </section>
+
+      {/* Sección CONTACTANOS */}
+      <ContactForm />
     </main>
   );
 };

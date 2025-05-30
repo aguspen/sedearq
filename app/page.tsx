@@ -61,7 +61,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-0">
       <HeroCarousel images={images} />
       {/* Sección Proyectos */}
-      <section className="w-full mt-12 mb-12">
+      <section className="w-full mt-12 mb-8">
         <h2 className="text-center text-2xl md:text-3xl font-normal tracking-widest mb-16 font-montserrat">PROYECTOS</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-0 relative min-h-[810px]">
           {/* Arriba Izquierda: Imagen CASA JJ */}
@@ -103,7 +103,7 @@ export default function Home() {
         </div>
       </section>
       {/* Sección Reformas */}
-      <section className="w-full mt-12 mb-12">
+      <section className="w-full mt-6 mb-6">
         <h2 className="text-center text-2xl md:text-3xl font-normal tracking-widest mb-16 font-montserrat">REFORMAS</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-0 relative min-h-[810px]">
           {/* Arriba Izquierda: Imagen REFORMA CALLAO */}
@@ -145,20 +145,20 @@ export default function Home() {
         </div>
       </section>
       {/* Sección OBRAS */}
-      <section className="w-full mt-12 mb-12">
+      <section className="w-full mt-6 mb-6">
         <h2 className="text-center text-2xl md:text-3xl font-normal tracking-widest mb-8 font-montserrat">EN OBRA</h2>
         <div className="w-full flex justify-center mb-12">
           <div className="h-24 w-px bg-gray-400" />
         </div>
         {/* Obras Images Grid */}
-        <div className="w-full grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div className="w-full max-w-[calc(100%-24px)] mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
           {[...Array(6)].map((_, i) => (
-            <div key={i} className="relative w-full aspect-square overflow-hidden group">
+            <div key={i} className="relative w-full aspect-[2/1.5] overflow-hidden group">
               <Image
                 src="/obraprueba.jpg" 
                 alt={`Obra ${i + 1}`}
                 fill
-                className="object-cover transition-all duration-300 group-hover:grayscale"
+                className="object-cover transition-all duration-300"
               />
               <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
                 <span className="text-white text-lg font-montserrat tracking-widest">OBRA {i + 1}</span>

@@ -34,7 +34,7 @@ export const NavBar = () => {
           <li key={link.href}>
             <Link
               href={link.href}
-              className={`pb-1 transition-all ${pathname === link.href ? 'border-b-2 border-black font-semibold' : 'border-b-2 border-transparent hover:border-black'} `}
+              className={`pb-1 transition-all ${pathname === link.href ? 'border-b-2 border-black' : 'border-b-2 border-transparent hover:border-black'} `}
             >
               {link.name}
             </Link>
@@ -58,7 +58,7 @@ export const NavBar = () => {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`block pb-1 text-lg ${pathname === link.href ? 'border-b-2 border-black font-semibold' : 'border-b-2 border-transparent hover:border-black'} `}
+                className={`block pb-1 text-lg ${pathname === link.href ? 'border-b-2 border-black' : 'border-b-2 border-transparent hover:border-black'} `}
                 onClick={() => setMenuOpen(false)}
               >
                 {link.name}

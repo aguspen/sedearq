@@ -69,15 +69,15 @@ const ProyectoPage = ({ params }: Props) => {
       </div>
 
       {/* 4-Image Gallery */}
-      <div className="w-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-2 mb-12">
+      <div className="w-full max-w-[calc(100%-24px)] mx-auto grid grid-cols-2 gap-4 mb-12">
         {galleryImages.map((img, i) => (
-          <div key={i} className="aspect-square relative cursor-pointer" onClick={() => openCarousel(i)}>
+          <div key={i} className="aspect-[2/1.2] relative cursor-pointer" onClick={() => openCarousel(i)}>
             <Image
               src={img}
               alt={`${proyecto.titulo} ${i + 1}`}
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 50vw, 25vw"
+              sizes="(max-width: 768px) 50vw, 50vw"
               priority={i < 2}
             />
           </div>
