@@ -40,7 +40,7 @@ const proyectos = [
       'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
       '2022',
     ],
-    img: '/casajj.jpg',
+    img: '/casa-jj-1.jpg',
     imgAlt: 'Casa JJ',
   },
   {
@@ -51,7 +51,7 @@ const proyectos = [
       'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
       '2022',
     ],
-    img: '/casanojj.jpg',
+    img: '/casa-jj-2.jpg',
     imgAlt: 'Casa JM',
   },
 ]
