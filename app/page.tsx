@@ -10,22 +10,22 @@ const images = [
     url: '/proyecto/hero-1',
   },
   {
-    src: '/1. Sede Arq Casa Estancias- Fachada 22.jpg',
+    src: '/casa-dd-hero.jpg',
     alt: 'Fachada 22',
     url: '/proyecto/fachada-22',
   },
   {
-    src: '/3. Sede Arq Casa Estancias- Living 5.jpg',
+    src: '/casa-jj-1.jpg',
     alt: 'Living 5',
     url: '/proyecto/living-5',
   },
   {
-    src: '/6. Sede Arq Casa Estancias- Cocina 6 EDITADA.jpg',
+    src: '/casa-jj-2.jpg',
     alt: 'Cocina 6',
     url: '/proyecto/cocina-6',
   },
   {
-    src: '/13. Sede Arq Casa Estancias- Baño 5.jpg',
+    src: '/casa-jj-3.jpg',
     alt: 'Baño 5',
     url: '/proyecto/bano-5',
   },
