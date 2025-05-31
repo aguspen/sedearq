@@ -23,7 +23,7 @@ export const HeroCarousel = ({ images }: HeroCarouselProps) => {
   const next = () => setCurrent((prev) => (prev + 1) % total)
 
   return (
-    <div className="relative w-full h-[74vh] max-h-[870px] flex items-center justify-center overflow-hidden bg-black">
+    <div className="relative w-full h-[50vh] md:h-[74vh] max-h-[870px] flex items-center justify-center overflow-hidden bg-black">
       {images.map((img, idx) => (
         <Link
           href={img.url}

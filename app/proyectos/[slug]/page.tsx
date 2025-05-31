@@ -58,10 +58,10 @@ const ProyectoPage = ({ params }: Props) => {
       </div>
 
       {/* Project Details Text */}
-      <div className="w-full max-w-5xl mx-auto text-center mb-12 px-4">
-        <h1 className="text-2xl md:text-3xl font-normal tracking-widest mb-4 font-sans" style={{ fontFamily: 'Arial, sans-serif' }}>{proyecto.titulo}</h1>
-        <div className="text-base md:text-xl font-montserrat tracking-widest mb-6 uppercase text-black/80">{proyecto.descripcion || ''}</div>
-        <div className="text-sm md:text-base font-montserrat text-black/70 leading-relaxed">
+      <div className="w-full max-w-5xl mx-auto text-center mb-8 md:mb-12 px-4">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-normal tracking-widest mb-3 md:mb-4 font-sans" style={{ fontFamily: 'Arial, sans-serif' }}>{proyecto.titulo}</h1>
+        <div className="text-sm md:text-base lg:text-xl font-montserrat tracking-widest mb-4 md:mb-6 uppercase text-black/80">{proyecto.descripcion || ''}</div>
+        <div className="text-xs md:text-sm lg:text-base font-montserrat text-black/70 leading-relaxed">
           {(proyecto.detalles || []).map((d: string, i: number) => (
             <div key={i}>{d}</div>
           ))}
@@ -69,7 +69,7 @@ const ProyectoPage = ({ params }: Props) => {
       </div>
 
       {/* 4-Image Gallery */}
-      <div className="w-full max-w-[calc(100%-24px)] mx-auto grid grid-cols-2 gap-4 mb-12">
+      <div className="w-full max-w-[calc(100%-32px)] md:max-w-[calc(100%-48px)] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-8 md:mb-12">
         {galleryImages.map((img, i) => (
           <div key={i} className="aspect-[2/1.2] relative cursor-pointer" onClick={() => openCarousel(i)}>
             <Image
@@ -77,7 +77,7 @@ const ProyectoPage = ({ params }: Props) => {
               alt={`${proyecto.titulo} ${i + 1}`}
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 50vw, 50vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 50vw"
               priority={i < 2}
             />
           </div>
@@ -85,15 +85,15 @@ const ProyectoPage = ({ params }: Props) => {
       </div>
 
       {/* OTROS PROYECTOS Section */}
-      <section className="w-full flex flex-col items-center justify-center mt-12 mb-12 px-0">
-        <h2 className="text-center text-3xl font-normal tracking-widest mb-8 font-sans" style={{ fontFamily: 'Arial, sans-serif' }}>
+      <section className="w-full flex flex-col items-center justify-center mt-8 md:mt-12 mb-8 md:mb-12 px-4 md:px-0">
+        <h2 className="text-center text-2xl md:text-3xl font-normal tracking-widest mb-6 md:mb-8 font-sans" style={{ fontFamily: 'Arial, sans-serif' }}>
           OTROS PROYECTOS
         </h2>
-        <div className="w-full flex justify-center mb-12">
-          <div className="h-24 w-px bg-gray-400" />
+        <div className="w-full flex justify-center mb-8 md:mb-12">
+          <div className="h-16 md:h-24 w-px bg-gray-400" />
         </div>
         {/* Project Previews */}
-        <div className="w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-6">
+        <div className="w-full max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 p-4 md:p-6">
           {otherProyectos.map((proy) => (
              <ProjectPreview key={proy.slug} proyecto={proy} />
           ))}

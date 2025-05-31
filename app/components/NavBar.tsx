@@ -17,19 +17,19 @@ export const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <nav className="w-full border-b border-transparent px-6 py-2 flex items-center justify-between font-sans bg-white">
+    <nav className="w-full border-b border-transparent px-4 md:px-6 py-2 flex items-center justify-between font-sans bg-white">
       {/* Logo */}
       <Link href="/" className="flex items-center select-none">
         <Image
           src="/logosedeweb.png"
           alt="SedeArq Logo"
-          width={120}
-          height={40}
-          className="object-contain"
+          width={100}
+          height={32}
+          className="object-contain md:w-[120px] md:h-[40px]"
         />
       </Link>
       {/* Desktop Menu */}
-      <ul className="hidden md:flex gap-12 items-center text-black text-base font-montserrat">
+      <ul className="hidden md:flex gap-8 lg:gap-12 items-center text-black text-sm md:text-base font-montserrat">
         {navLinks.map(link => (
           <li key={link.href}>
             <Link
@@ -43,22 +43,22 @@ export const NavBar = () => {
       </ul>
       {/* Mobile Hamburger */}
       <button
-        className="md:hidden flex flex-col justify-center items-center w-10 h-10 focus:outline-none"
+        className="md:hidden flex flex-col justify-center items-center w-8 h-8 focus:outline-none"
         aria-label="Abrir menú"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        <span className={`block w-7 h-0.5 bg-black mb-1.5 transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
-        <span className={`block w-7 h-0.5 bg-black mb-1.5 transition-all ${menuOpen ? 'opacity-0' : ''}`}></span>
-        <span className={`block w-7 h-0.5 bg-black transition-all ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+        <span className={`block w-6 h-0.5 bg-black mb-1.5 transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+        <span className={`block w-6 h-0.5 bg-black mb-1.5 transition-all ${menuOpen ? 'opacity-0' : ''}`}></span>
+        <span className={`block w-6 h-0.5 bg-black transition-all ${menuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
       </button>
       {/* Mobile Menu */}
       {menuOpen && (
-        <ul className="absolute top-16 right-6 bg-white shadow-lg rounded-lg flex flex-col gap-6 p-6 z-50 md:hidden min-w-[200px] border border-gray-200 animate-fade-in">
+        <ul className="absolute top-14 right-4 bg-white shadow-lg rounded-lg flex flex-col gap-4 p-4 z-50 md:hidden min-w-[180px] border border-gray-200 animate-fade-in">
           {navLinks.map(link => (
             <li key={link.href}>
               <Link
                 href={link.href}
-                className={`block pb-1 text-lg ${pathname === link.href ? 'border-b-2 border-black' : 'border-b-2 border-transparent hover:border-black'} `}
+                className={`block pb-1 text-base ${pathname === link.href ? 'border-b-2 border-black' : 'border-b-2 border-transparent hover:border-black'} `}
                 onClick={() => setMenuOpen(false)}
               >
                 {link.name}

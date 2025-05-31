@@ -22,14 +22,14 @@ export const ContactForm = () => {
     'w-full border border-gray-300 bg-[#FAFAFA] px-4 py-3 text-base font-montserrat uppercase text-gray-700 focus:outline-none focus:border-black transition placeholder:font-montserrat placeholder:uppercase placeholder:text-gray-600';
 
   return (
-    <section className="w-full flex flex-col items-center justify-center mt-24 mb-12 px-0">
-      <h2 className="text-center text-3xl font-normal tracking-widest mb-8 font-sans" style={{ fontFamily: 'Arial, sans-serif' }}>
+    <section className="w-full flex flex-col items-center justify-center mt-12 md:mt-24 mb-8 md:mb-12 px-4 md:px-0">
+      <h2 className="text-center text-2xl md:text-3xl font-normal tracking-widest mb-6 md:mb-8 font-sans" style={{ fontFamily: 'Arial, sans-serif' }}>
         CONTACTANOS
       </h2>
-      <div className="w-full flex justify-center mb-12">
-        <div className="h-24 w-px bg-gray-400" />
+      <div className="w-full flex justify-center mb-8 md:mb-12">
+        <div className="h-16 md:h-24 w-px bg-gray-400" />
       </div>
-      <form className="w-full max-w-3xl flex flex-col gap-3" onSubmit={handleSubmit} autoComplete="off">
+      <form className="w-full max-w-[calc(100%-32px)] md:max-w-3xl flex flex-col gap-3" onSubmit={handleSubmit} autoComplete="off">
         <input
           type="text"
           name="nombre"
