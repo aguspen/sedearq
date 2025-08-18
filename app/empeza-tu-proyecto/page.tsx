@@ -26,10 +26,10 @@ export default function EmpezaTuProyectoPage() {
 
                  {/* Form Section */}
          <div className="w-full flex flex-col items-center justify-center mt-12 md:mt-24 mb-8 md:mb-12 px-4 md:px-0">
-           <h2 className="text-center text-2xl md:text-3xl font-normal tracking-widest mb-6 md:mb-8 font-sans" style={{ fontFamily: 'Arial, sans-serif' }}>
+           <h2 className="text-center text-2xl md:text-xl font-normal tracking-widest mb-6 md:mb-8 font-sans" style={{ fontFamily: 'Arial, sans-serif' }}>
              EMPEZÁ TU PROYECTO
            </h2>
-                       <div className="text-sm md:text-base font-montserrat font-normal text-black/80 leading-relaxed text-center max-w-3GITxl mx-auto mb-4 md:mb-6" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}>
+                       <div className="text-sm md:text-base font-montserrat font-normal text-black/80 leading-relaxed text-center max-w-3xl mx-auto mb-4 md:mb-6" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}>
               Para aquellos que quieran comenzar su proyecto, el siguiente formulario nos permite acercarles una propuesta personalizada y acorde a sus necesidades específicas.
             </div>
            <div className="w-full flex justify-center mb-8 md:mb-12">
