@@ -75,7 +75,7 @@ export default function Home() {
           <div className="flex flex-col items-start justify-center px-6 py-8 md:py-0 md:pl-12 md:pr-0 relative md:h-[340px] md:flex md:items-center text-left">
             <h3 className="font-normal text-xl md:text-2xl font-sans tracking-widest mb-2 w-full text-left" style={{ fontFamily: 'Arial, sans-serif' }}>{proyectos[0].nombre}</h3>
             <div className="text-sm md:text-base font-montserrat tracking-widest mb-4 uppercase w-full text-left">{proyectos[0].descripcion}</div>
-            <div className="text-sm md:text-base font-montserrat text-black/80 leading-relaxed w-full text-left">
+            <div className="text-sm md:text-base font-montserrat font-normal text-black/80 leading-relaxed w-full text-left" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}>
               {proyectos[0].detalles.map((d, i) => (
                 <div key={i}>{d}</div>
               ))}
@@ -85,7 +85,7 @@ export default function Home() {
           <div className="flex flex-col items-end justify-center px-6 py-5 md:py-0 md:pr-12 md:pl-0 relative text-right md:h-[340px] md:flex md:items-center">
             <h3 className="font-normal text-xl md:text-2xl font-sans tracking-widest mb-2 w-full text-right" style={{ fontFamily: 'Arial, sans-serif' }}>{proyectos[1].nombre}</h3>
             <div className="text-sm md:text-base font-montserrat tracking-widest mb-4 uppercase w-full text-right">{proyectos[1].descripcion}</div>
-            <div className="text-sm md:text-base font-montserrat text-black/80 leading-relaxed w-full text-right">
+            <div className="text-sm md:text-base font-montserrat font-normal text-black/80 leading-relaxed w-full text-right" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}>
               {proyectos[1].detalles.map((d, i) => (
                 <div key={i}>{d}</div>
               ))}
@@ -117,7 +117,7 @@ export default function Home() {
           <div className="flex flex-col items-start justify-center px-6 py-8 md:py-0 md:pl-12 md:pr-0 relative md:h-[340px] md:flex md:items-center text-left">
             <h3 className="font-normal text-xl md:text-2xl font-sans tracking-widest mb-2 w-full text-left" style={{ fontFamily: 'Arial, sans-serif' }}>REFORMA CALLAO</h3>
             <div className="text-sm md:text-base font-montserrat tracking-widest mb-4 uppercase w-full text-left">INTEGRAL</div>
-            <div className="text-sm md:text-base font-montserrat text-black/80 leading-relaxed w-full text-left">
+            <div className="text-sm md:text-base font-montserrat font-normal text-black/80 leading-relaxed w-full text-left" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}>
               <div>Cocina, baño y dormitorios</div>
               <div>Estancias de Pilar, Pilar, Pcia. de Buenos Aires</div>
               <div>2022</div>
@@ -127,7 +127,7 @@ export default function Home() {
           <div className="flex flex-col items-end justify-center px-6 py-8 md:py-0 md:pr-12 md:pl-0 relative text-right md:h-[340px] md:flex md:items-center">
             <h3 className="font-normal text-xl md:text-2xl font-sans tracking-widest mb-2 w-full text-right" style={{ fontFamily: 'Arial, sans-serif' }}>REFORMA TALCAHUANO</h3>
             <div className="text-sm md:text-base font-montserrat tracking-widest mb-4 uppercase w-full text-right">PARCIAL</div>
-            <div className="text-sm md:text-base font-montserrat text-black/80 leading-relaxed w-full text-right">
+            <div className="text-sm md:text-base font-montserrat font-normal text-black/80 leading-relaxed w-full text-right" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}>
               <div>Baño y cocina</div>
               <div>Estancias de Pilar, Pilar, Pcia. de Buenos Aires</div>
               <div>2022</div>

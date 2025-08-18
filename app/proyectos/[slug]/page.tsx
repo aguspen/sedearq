@@ -61,7 +61,7 @@ const ProyectoPage = ({ params }: Props) => {
       <div className="w-full max-w-5xl mx-auto text-center mb-8 md:mb-12 px-4">
         <h1 className="text-xl md:text-2xl lg:text-3xl font-normal tracking-widest mb-3 md:mb-4 font-sans" style={{ fontFamily: 'Arial, sans-serif' }}>{proyecto.titulo}</h1>
         <div className="text-sm md:text-base lg:text-xl font-montserrat tracking-widest mb-4 md:mb-6 uppercase text-black/80">{proyecto.descripcion || ''}</div>
-        <div className="text-xs md:text-sm lg:text-base font-montserrat text-black/70 leading-relaxed">
+        <div className="text-xs md:text-sm lg:text-base font-montserrat text-black/70 leading-relaxed" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}>
           {(proyecto.detalles || []).map((d: string, i: number) => (
             <div key={i}>{d}</div>
           ))}

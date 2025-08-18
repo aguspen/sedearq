@@ -12,6 +12,7 @@ export const Footer = () => {
               <li className="mb-2"><Link href="/proyectos" className="hover:underline">PROYECTOS</Link></li>
               <li className="mb-2"><Link href="/nosotros" className="hover:underline">NOSOTROS</Link></li>
               <li className="mb-2"><Link href="/contacto" className="hover:underline">CONTACTO</Link></li>
+              <li className="mb-2"><Link href="/empeza-tu-proyecto" className="hover:underline">EMPEZÁ TU PROYECTO</Link></li>
             </ul>
           </div>
 

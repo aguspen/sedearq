@@ -10,6 +10,7 @@ const navLinks = [
   { name: 'PROYECTOS', href: '/proyectos' },
   { name: 'NOSOTROS', href: '/nosotros' },
   { name: 'CONTACTO', href: '/contacto' },
+  { name: 'EMPEZÁ TU PROYECTO', href: '/empeza-tu-proyecto' },
 ]
 
 export const NavBar = () => {
