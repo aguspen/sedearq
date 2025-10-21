@@ -30,6 +30,12 @@ export const ImageCarouselOverlay = ({ images, initialIndex, onClose }: ImageCar
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
+  const handleImageError = () => {
+    console.log(`Failed to load image: ${images[currentIndex]}`);
+    // Skip to next image if current one fails to load
+    nextImage();
+  };
+
   const handleKeyDown = (event: KeyboardEvent) => {
     if (event.key === 'ArrowRight') {
       nextImage();
@@ -69,6 +75,7 @@ export const ImageCarouselOverlay = ({ images, initialIndex, onClose }: ImageCar
           alt={`Project Image ${currentIndex + 1}`}
           fill
           className="object-contain"
+          onError={handleImageError}
         />
 
         {/* Close Button */}

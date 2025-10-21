@@ -27,8 +27,31 @@ const ProyectoPage = ({ params }: Props) => {
 
   if (!proyecto) return notFound()
 
-  // Use first 4 images for the gallery, repeat if less than 4
-  const galleryImages = Array.from({ length: 4 }, (_, i) => proyecto.imagenes[i % proyecto.imagenes.length])
+  // Dynamic gallery logic: show all images if ≤4, max 8 if more
+  const totalImages = proyecto.imagenes.length;
+  let galleryImages;
+  let gridLayout;
+
+  if (totalImages <= 4) {
+    // Show ALL images (1-4) without empty spaces
+    galleryImages = proyecto.imagenes;
+    gridLayout = totalImages === 1 ? "grid-cols-1" : 
+                 totalImages === 2 ? "grid-cols-1 sm:grid-cols-2" :
+                 totalImages === 3 ? "grid-cols-1 sm:grid-cols-2" :
+                 "grid-cols-1 sm:grid-cols-2"; // 4 images
+  } else if (totalImages === 6) {
+    // Show exactly 6 images in a 2x3 grid
+    galleryImages = proyecto.imagenes.slice(0, 6);
+    gridLayout = "grid-cols-2 sm:grid-cols-3"; // 2x3 grid for 6 images
+  } else if (currentSlug === 'casa-golf') {
+    // Special case for CASA GOLF: show exactly 6 images in 2x3 grid
+    galleryImages = proyecto.imagenes.slice(0, 6);
+    gridLayout = "grid-cols-2 sm:grid-cols-3"; // 2x3 grid for CASA GOLF
+  } else {
+    // Show maximum 8 images for projects with many photos
+    galleryImages = proyecto.imagenes.slice(0, 8);
+    gridLayout = "grid-cols-2 sm:grid-cols-4"; // Fixed grid for 8 images
+  }
 
   const openCarousel = (index: number) => {
     setCurrentImageIndex(index)
@@ -51,7 +74,7 @@ const ProyectoPage = ({ params }: Props) => {
           src={proyecto.hero}
           alt={proyecto.titulo}
           fill
-          className="object-cover"
+          className="object-cover object-bottom"
           priority
           sizes="100vw"
         />
@@ -68,8 +91,8 @@ const ProyectoPage = ({ params }: Props) => {
         </div>
       </div>
 
-      {/* 4-Image Gallery */}
-      <div className="w-full max-w-[calc(100%-32px)] md:max-w-[calc(100%-48px)] mx-auto grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4 mb-8 md:mb-12">
+      {/* Dynamic Gallery */}
+      <div className={`w-full max-w-[calc(100%-32px)] md:max-w-[calc(100%-48px)] mx-auto grid ${gridLayout} gap-3 md:gap-4 mb-8 md:mb-12`}>
         {galleryImages.map((img, i) => (
           <div key={i} className="aspect-[2/1.2] relative cursor-pointer" onClick={() => openCarousel(i)}>
             <Image

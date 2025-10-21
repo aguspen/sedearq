@@ -7,27 +7,27 @@ const images = [
   {
     src: '/Hero-image.jpg',
     alt: 'Hero 1',
-    url: '/proyecto/hero-1',
+    url: '/proyectos/casa-jj',
   },
   {
     src: '/casa-dd-hero.jpg',
-    alt: 'Fachada 22',
-    url: '/proyecto/fachada-22',
+    alt: 'Casa RZ',
+    url: '/proyectos/casa-rz',
   },
   {
     src: '/casa-jj-1.jpg',
-    alt: 'Living 5',
-    url: '/proyecto/living-5',
+    alt: 'Casa JJ',
+    url: '/proyectos/casa-jj',
   },
   {
     src: '/casa-jj-2.jpg',
-    alt: 'Cocina 6',
-    url: '/proyecto/cocina-6',
+    alt: 'Casa Golf',
+    url: '/proyectos/casa-golf',
   },
   {
     src: '/casa-jj-3.jpg',
-    alt: 'Baño 5',
-    url: '/proyecto/bano-5',
+    alt: 'Reforma Ayacucho',
+    url: '/proyectos/reforma-ayacucho',
   },
 ]
 
