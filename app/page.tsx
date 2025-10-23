@@ -4,30 +4,38 @@ import { HeroCarousel } from './components/HeroCarousel'
 import Link from 'next/link'
 
 const images = [
+  // 3 Proyectos
   {
-    src: '/Hero-image.jpg',
-    alt: 'Hero 1',
-    url: '/proyectos/casa-jj',
-  },
-  {
-    src: '/casa-dd-hero.jpg',
-    alt: 'Casa RZ',
-    url: '/proyectos/casa-rz',
-  },
-  {
-    src: '/casa-jj-1.jpg',
+    src: '/CASAJJ-020.jpg',
     alt: 'Casa JJ',
     url: '/proyectos/casa-jj',
   },
   {
-    src: '/casa-jj-2.jpg',
+    src: '/CASAJM-041.jpg',
+    alt: 'Casa JM',
+    url: '/proyectos/casa-jm',
+    objectPosition: 'bottom',
+  },
+  {
+    src: '/CASAGOLFRENDER-003.JPG',
     alt: 'Casa Golf',
     url: '/proyectos/casa-golf',
   },
+  // 3 Reformas
   {
-    src: '/casa-jj-3.jpg',
+    src: '/RFTALCAHUANO-004.JPEG',
+    alt: 'Reforma Talcahuano',
+    url: '/proyectos/reforma-talcahuano',
+  },
+  {
+    src: '/RFAYACUCHO-010.jpg',
     alt: 'Reforma Ayacucho',
     url: '/proyectos/reforma-ayacucho',
+  },
+  {
+    src: '/RFARCOS-004.JPEG',
+    alt: 'Reforma Arcos',
+    url: '/proyectos/reforma-arcos',
   },
 ]
 
@@ -51,7 +59,7 @@ const proyectos = [
       'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
       '2022',
     ],
-    img: '/casa-jj-2.jpg',
+    img: '/CASAJM-041.jpg',
     imgAlt: 'Casa JM',
   },
 ]
@@ -93,7 +101,7 @@ export default function Home() {
           </div>
           {/* Abajo Derecha: Imagen CASA JM */}
           <Link href="/proyectos/casa-jm" className="relative w-full h-64 md:h-[340px] md:rounded-none md:pr-0 overflow-hidden group">
-            <Image src={proyectos[1].img} alt={proyectos[1].imgAlt} fill className="object-cover transition-all duration-300 group-hover:grayscale" />
+            <Image src={proyectos[1].img} alt={proyectos[1].imgAlt} fill className="object-cover transition-all duration-300 group-hover:grayscale" style={{objectPosition: 'bottom'}} />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
               <span className="text-white text-lg font-montserrat tracking-widest">VER PROYECTO</span>
             </div>
@@ -108,7 +116,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-0 relative min-h-[810px]">
           {/* Arriba Izquierda: Imagen REFORMA CALLAO */}
           <Link href="/proyectos/reforma-callao" className="relative w-full h-64 md:h-[340px] md:rounded-none md:pl-0 overflow-hidden group">
-            <Image src={proyectos[0].img} alt={proyectos[0].imgAlt} fill className="object-cover transition-all duration-300 group-hover:grayscale" style={{objectPosition: 'center'}} />
+            <Image src="/casa-jj-1.jpg" alt="Reforma Callao" fill className="object-cover transition-all duration-300 group-hover:grayscale" style={{objectPosition: 'center'}} />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
               <span className="text-white text-lg font-montserrat tracking-widest">VER PROYECTO</span>
             </div>
@@ -135,7 +143,7 @@ export default function Home() {
           </div>
           {/* Abajo Derecha: Imagen REFORMA TALCAHUANO */}
           <Link href="/proyectos/reforma-talcahuano" className="relative w-full h-64 md:h-[340px] md:rounded-none md:pr-0 overflow-hidden group">
-            <Image src={proyectos[1].img} alt={proyectos[1].imgAlt} fill className="object-cover transition-all duration-300 group-hover:grayscale" style={{objectPosition: 'center'}} />
+            <Image src="/RFTALCAHUANO-004.JPEG" alt="Reforma Talcahuano" fill className="object-cover transition-all duration-300 group-hover:grayscale" style={{objectPosition: 'center'}} />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
               <span className="text-white text-lg font-montserrat tracking-widest">VER PROYECTO</span>
             </div>

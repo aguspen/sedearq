@@ -74,7 +74,8 @@ const ProyectoPage = ({ params }: Props) => {
           src={proyecto.hero}
           alt={proyecto.titulo}
           fill
-          className="object-cover object-bottom"
+          className="object-cover"
+          style={{ objectPosition: currentSlug === 'casa-golf' ? 'center' : 'bottom' }}
           priority
           sizes="100vw"
         />

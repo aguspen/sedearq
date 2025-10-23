@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 interface HeroCarouselProps {
-  images: { src: string; alt: string; url: string }[]
+  images: { src: string; alt: string; url: string; objectPosition?: string }[]
 }
 
 export const HeroCarousel = ({ images }: HeroCarouselProps) => {
@@ -35,7 +35,7 @@ export const HeroCarousel = ({ images }: HeroCarouselProps) => {
             src={img.src}
             alt={img.alt}
             fill
-            style={{ objectFit: 'cover' }}
+            style={{ objectFit: 'cover', objectPosition: img.objectPosition || 'center' }}
             priority={idx === 0}
             sizes="100vw"
           />

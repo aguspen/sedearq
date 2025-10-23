@@ -9,12 +9,27 @@ export default function EmpezaTuProyectoPage() {
     formato: false,
     rango: false
   });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleSelectChange = (name: string, value: string) => {
     setFilledSelects(prev => ({
       ...prev,
       [name]: value !== ''
     }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const res = await fetch('https://formspree.io/f/xqalovyw', {
+      method: 'POST',
+      body: data,
+      headers: {
+        Accept: 'application/json',
+      },
+    });
+    if (res.ok) setSubmitted(true);
   };
 
   return (
@@ -36,8 +51,7 @@ export default function EmpezaTuProyectoPage() {
              <div className="h-16 md:h-24 w-px bg-gray-400" />
            </div>
           <form 
-            action="https://formspree.io/f/xqalovyw" 
-            method="POST"
+            onSubmit={handleSubmit}
             className="w-full max-w-[calc(100%-32px)] md:max-w-4xl flex flex-col gap-6"
             autoComplete="off"
           >
@@ -226,6 +240,9 @@ export default function EmpezaTuProyectoPage() {
             >
               ENVIAR
             </button>
+            {submitted && (
+              <div className="text-green-600 text-center mt-4 font-montserrat">¡Gracias por tu consulta! Te contactaremos pronto.</div>
+            )}
           </form>
         </div>
       </div>
