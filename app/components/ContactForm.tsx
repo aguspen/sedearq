@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react'
+import { FORMSPREE_ENDPOINTS } from '../config/formspree'
 
 export const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false)
@@ -8,7 +9,7 @@ export const ContactForm = () => {
     e.preventDefault()
     const form = e.currentTarget
     const data = new FormData(form)
-    const res = await fetch('https://formspree.io/f/xyzwobap', {
+    const res = await fetch(FORMSPREE_ENDPOINTS.CONTACT, {
       method: 'POST',
       body: data,
       headers: {

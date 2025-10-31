@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { FORMSPREE_ENDPOINTS } from '../config/formspree';
 
 export default function EmpezaTuProyectoPage() {
   const [filledSelects, setFilledSelects] = useState({
@@ -22,7 +23,7 @@ export default function EmpezaTuProyectoPage() {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    const res = await fetch('https://formspree.io/f/xqalovyw', {
+    const res = await fetch(FORMSPREE_ENDPOINTS.PROJECT, {
       method: 'POST',
       body: data,
       headers: {
@@ -134,7 +135,7 @@ export default function EmpezaTuProyectoPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex flex-col">
                 <label htmlFor="dueno" className="text-sm font-montserrat uppercase text-gray-500 mb-2" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}>
-                  ¿SOS DUEÑO DEL TERRENO?
+                  ¿YA TENÉS TU TERRENO?
                 </label>
                 <select
                   id="dueno"

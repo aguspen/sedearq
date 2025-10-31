@@ -44,7 +44,7 @@ const proyectos = [
     nombre: 'CASA JJ',
     descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
     detalles: [
-      '228m² cubiertos - 59m² semicubiertos',
+      '275m² - Vivienda unifamiliar',
       'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
       '2022',
     ],
@@ -55,8 +55,8 @@ const proyectos = [
     nombre: 'CASA JM',
     descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
     detalles: [
-      '228m² cubiertos - 59m² semicubiertos',
-      'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
+      '301 m2 - Vivienda unifamiliar',
+      'Barrio: El Ocho - Pilar, Prov. de Buenos Aires',
       '2022',
     ],
     img: '/CASAJM-041.jpg',
@@ -126,9 +126,7 @@ export default function Home() {
             <h3 className="font-normal text-xl md:text-2xl font-sans tracking-widest mb-2 w-full text-left" style={{ fontFamily: 'Arial, sans-serif' }}>REFORMA CALLAO</h3>
             <div className="text-sm md:text-base font-montserrat tracking-widest mb-4 uppercase w-full text-left">INTEGRAL</div>
             <div className="text-sm md:text-base font-montserrat font-normal text-black/80 leading-relaxed w-full text-left" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}>
-              <div>Cocina, baño y dormitorios</div>
-              <div>Estancias de Pilar, Pilar, Pcia. de Buenos Aires</div>
-              <div>2022</div>
+              <div>Recoleta, Ciudad Autónoma de Buenos Aires</div>
             </div>
           </div>
           {/* Abajo Izquierda: Texto REFORMA TALCAHUANO */}
@@ -136,9 +134,7 @@ export default function Home() {
             <h3 className="font-normal text-xl md:text-2xl font-sans tracking-widest mb-2 w-full text-right" style={{ fontFamily: 'Arial, sans-serif' }}>REFORMA TALCAHUANO</h3>
             <div className="text-sm md:text-base font-montserrat tracking-widest mb-4 uppercase w-full text-right">PARCIAL</div>
             <div className="text-sm md:text-base font-montserrat font-normal text-black/80 leading-relaxed w-full text-right" style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 400 }}>
-              <div>Baño y cocina</div>
-              <div>Estancias de Pilar, Pilar, Pcia. de Buenos Aires</div>
-              <div>2022</div>
+              <div>Recoleta, Ciudad Autónoma de Buenos Aires</div>
             </div>
           </div>
           {/* Abajo Derecha: Imagen REFORMA TALCAHUANO */}

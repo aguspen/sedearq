@@ -19,9 +19,9 @@ export const Footer = () => {
           {/* Column 2 */}
           <div className="w-full md:w-auto mb-8 md:mb-0">
             <ul>
-              <li className="mb-2">INSTAGRAM</li>
-              <li className="mb-2">LANDHI</li>
-              <li className="mb-2">WHATSAPP</li>
+              <li className="mb-2"><Link href="https://www.instagram.com/sedearq/" target="_blank" rel="noopener noreferrer" className="hover:underline">INSTAGRAM</Link></li>
+              <li className="mb-2"><Link href="https://www.linkedin.com/company/sedearq/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="hover:underline">LINKEDIN</Link></li>
+              <li className="mb-2"><Link href="https://wa.me/5491136543442" target="_blank" rel="noopener noreferrer" className="hover:underline">WHATSAPP</Link></li>
             </ul>
           </div>
 

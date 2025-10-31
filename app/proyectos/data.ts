@@ -13,9 +13,9 @@ export const proyectos: Proyecto[] = [
     titulo: 'CASA JJ',
     descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
     detalles: [
-      '228m² cubiertos - 59m² semicubiertos',
-      'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
-      '2022',
+      'Barrio: Estancias de Pilar - Pilar, Prov. de Buenos Aires',
+      '275 m2',
+      'Vivienda unifamiliar',
     ],
     hero: '/CASAJJ-020.jpg',
     imagenes: [
@@ -48,9 +48,9 @@ export const proyectos: Proyecto[] = [
     titulo: 'CASA JM',
     descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
     detalles: [
-      '228m² cubiertos - 59m² semicubiertos',
-      'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
-      '2022',
+      'Barrio: El Ocho - Pilar, Prov. de Buenos Aires',
+      '301 m2',
+      'Vivienda unifamiliar',
     ],
     hero: '/CASAJM-041.jpg',
     imagenes: [
@@ -76,9 +76,9 @@ export const proyectos: Proyecto[] = [
     titulo: 'CASA GOLF',
     descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
     detalles: [
-      '228m² cubiertos - 59m² semicubiertos',
-      'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
-      '2022',
+      'Barrio: Estancia Villa Maria - Máximo Paz, Prov. de Buenos Aires',
+      '442 m2',
+      'Vivienda unifamiliar',
     ],
     hero: '/CASAGOLFRENDER-003.JPG',
     imagenes: [
@@ -112,9 +112,9 @@ export const proyectos: Proyecto[] = [
     titulo: 'CASA BG',
     descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
     detalles: [
-      '228m² cubiertos - 59m² semicubiertos',
-      'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
-      '2022',
+      'Barrio: El Tropezón - San Antonio de Areco, Prov. de Buenos Aires',
+      '260 m2',
+      'Vivienda unifamiliar',
     ],
     hero: '/casa-jj-4.jpg',
     imagenes: ['/casa-jj-4.jpg'],
@@ -124,9 +124,9 @@ export const proyectos: Proyecto[] = [
     titulo: 'CASA CS',
     descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
     detalles: [
-      '200m² cubiertos - 60m² semicubiertos',
-      'Barrio cerrado, Pilar, Pcia. de Buenos Aires',
-      '2023',
+      'Barrio: Estancia Villa Maria - Máximo Paz, Prov. de Buenos Aires',
+      '210 m2',
+      'Vivienda unifamiliar',
     ],
     hero: '/CASACS-002.jpg',
     imagenes: [
@@ -153,9 +153,9 @@ export const proyectos: Proyecto[] = [
     titulo: 'CASA RZ',
     descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
     detalles: [
-      '250m² cubiertos - 80m² semicubiertos',
-      'Barrio cerrado, Pilar, Pcia. de Buenos Aires',
-      '2023',
+      'Barrio: El Ocho - Pilar, Prov. de Buenos Aires',
+      '260 m2',
+      'Vivienda unifamiliar',
     ],
     hero: '/CASARZ-A-002.jpeg',
     imagenes: [
@@ -177,9 +177,7 @@ export const proyectos: Proyecto[] = [
     titulo: 'REFORMA CALLAO',
     descripcion: 'REFORMA INTEGRAL',
     detalles: [
-      'Cocina, baño y dormitorios',
-      'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
-      '2022',
+      'Recoleta, Ciudad Autónoma de Buenos Aires',
     ],
     hero: '/casa-jj-1.jpg',
     imagenes: ['/casa-jj-1.jpg'],
@@ -189,9 +187,7 @@ export const proyectos: Proyecto[] = [
     titulo: 'REFORMA TALCAHUANO',
     descripcion: 'REFORMA INTEGRAL',
     detalles: [
-      'Cocina, baño, living y espacios comunes',
-      'Recoleta, CABA',
-      '2023',
+      'Recoleta, Ciudad Autónoma de Buenos Aires',
     ],
     hero: '/RFTALCAHUANO-004.JPEG',
     imagenes: [
@@ -216,9 +212,7 @@ export const proyectos: Proyecto[] = [
     titulo: 'REFORMA ARCOS',
     descripcion: 'REFORMA INTEGRAL',
     detalles: [
-      'Cocina, baño y espacios comunes',
-      'Barrio Arcos, Pilar, Pcia. de Buenos Aires',
-      '2023',
+      'Belgrano, Ciudad Autónoma de Buenos Aires',
     ],
     hero: '/RFARCOS-004.JPEG',
     imagenes: [
@@ -241,9 +235,7 @@ export const proyectos: Proyecto[] = [
     titulo: 'REFORMA AYACUCHO',
     descripcion: 'REFORMA INTEGRAL',
     detalles: [
-      'Living, cocina, baño y espacios comunes',
-      'Ayacucho, CABA',
-      '2023',
+      'Recoleta, Ciudad Autónoma de Buenos Aires',
     ],
     hero: '/RFAYACUCHO-010.jpg',
     imagenes: [
@@ -263,12 +255,10 @@ export const proyectos: Proyecto[] = [
   },
   {
     slug: 'reforma-pena-a',
-    titulo: 'REFORMA PEÑA A',
+    titulo: 'REFORMA PEÑA',
     descripcion: 'REFORMA INTEGRAL',
     detalles: [
-      'Cocina, baño y espacios comunes',
-      'Peña, CABA',
-      '2023',
+      'Recoleta, Ciudad Autónoma de Buenos Aires',
     ],
     hero: '/RFPEÑA-001.jpg',
     imagenes: [
@@ -283,14 +273,106 @@ export const proyectos: Proyecto[] = [
   },
   {
     slug: 'reforma-scalabrini',
-    titulo: 'REFORMA SCALABRINI',
-    descripcion: 'REFORMA PARCIAL',
+    titulo: 'REFORMA SCALABRINI ORTIZ',
+    descripcion: 'REFORMA INTEGRAL',
     detalles: [
-      'Baño y cocina',
-      'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
-      '2022',
+      'Recoleta, Ciudad Autónoma de Buenos Aires',
     ],
     hero: '/casa-dd-hero.jpg',
     imagenes: ['/casa-dd-hero.jpg'],
+  },
+  // Nuevos PROYECTOS (sin imágenes aún)
+  {
+    slug: 'casa-g',
+    titulo: 'CASA G',
+    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    detalles: [
+      'Barrio: Estancias de Pilar - Pilar, Prov. de Buenos Aires',
+      '324 m2',
+      'vivienda unifamiliar',
+    ],
+    hero: '/hero-image.jpg',
+    imagenes: [],
+  },
+  {
+    slug: 'casa-sj',
+    titulo: 'CASA SJ',
+    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    detalles: [
+      'Barrio: Medal C.C. - Pilar, Prov. de Buenos Aires',
+      '255 m2',
+      'vivienda unifamiliar',
+    ],
+    hero: '/hero-image.jpg',
+    imagenes: [],
+  },
+  {
+    slug: 'casa-pm',
+    titulo: 'CASA PM',
+    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    detalles: [
+      'Barrio: Estancia Villa Maria - Máximo Paz, Prov. de Buenos Aires',
+      '360 m2',
+      'vivienda unifamiliar',
+    ],
+    hero: '/hero-image.jpg',
+    imagenes: [],
+  },
+  {
+    slug: 'casa-ab',
+    titulo: 'CASA AB',
+    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    detalles: [
+      'Barrio: Estancia Villa Maria - Máximo Paz, Prov. de Buenos Aires',
+      '360 m2',
+      'vivienda unifamiliar',
+    ],
+    hero: '/hero-image.jpg',
+    imagenes: [],
+  },
+  {
+    slug: 'casa-fc',
+    titulo: 'CASA FC',
+    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    detalles: [
+      'Barrio: Estancia Villa Maria - Máximo Paz, Prov. de Buenos Aires',
+      '363 m2',
+      'vivienda unifamiliar',
+    ],
+    hero: '/hero-image.jpg',
+    imagenes: [],
+  },
+  {
+    slug: 'casa-valeria',
+    titulo: 'CASA VALERIA',
+    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    detalles: [
+      'Barrio: Estancia Villa Maria - Máximo Paz, Prov. de Buenos Aires',
+      '215 m2',
+      'vivienda unifamiliar',
+    ],
+    hero: '/hero-image.jpg',
+    imagenes: [],
+  },
+  // Nuevas REFORMAS
+  {
+    slug: 'reforma-junin',
+    titulo: 'REFORMA JUNIN',
+    descripcion: 'REFORMA INTEGRAL',
+    detalles: [
+      'Recoleta, Ciudad Autónoma de Buenos Aires',
+    ],
+    hero: '/hero-image.jpg',
+    imagenes: [],
+  },
+  {
+    slug: 'reforma-tagle',
+    titulo: 'REFORMA TAGLE',
+    descripcion: 'REFORMA INTEGRAL',
+    detalles: [
+      'Recoleta, Ciudad Autónoma de Buenos Aires',
+    ],
+    hero: '/hero-image.jpg',
+    imagenes: [],
   },
 ]; 

@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { NavBar } from './components/NavBar'
 import { Footer } from './components/Footer'
+import { WhatsAppButton } from './components/WhatsAppButton'
 
 export const metadata: Metadata = {
   title: 'SedeArq',
@@ -19,6 +20,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
+        <WhatsAppButton phoneNumber="5491136543442" />
       </body>
     </html>
   )
