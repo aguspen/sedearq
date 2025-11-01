@@ -7,6 +7,9 @@ import { WhatsAppButton } from './components/WhatsAppButton'
 export const metadata: Metadata = {
   title: 'SedeArq',
   description: 'SedeArq - Tu plataforma de arquitectura',
+  icons: {
+    icon: '/favicon-sede.jpg',
+  },
 }
 
 export default function RootLayout({
@@ -20,7 +23,7 @@ export default function RootLayout({
         <NavBar />
         {children}
         <Footer />
-        <WhatsAppButton phoneNumber="5491136543442" />
+        <WhatsAppButton phoneNumber="5491150274251" />
       </body>
     </html>
   )

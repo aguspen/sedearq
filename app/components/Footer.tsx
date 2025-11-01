@@ -21,7 +21,7 @@ export const Footer = () => {
             <ul>
               <li className="mb-2"><Link href="https://www.instagram.com/sedearq/" target="_blank" rel="noopener noreferrer" className="hover:underline">INSTAGRAM</Link></li>
               <li className="mb-2"><Link href="https://www.linkedin.com/company/sedearq/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="hover:underline">LINKEDIN</Link></li>
-              <li className="mb-2"><Link href="https://wa.me/5491136543442" target="_blank" rel="noopener noreferrer" className="hover:underline">WHATSAPP</Link></li>
+              <li className="mb-2"><Link href="https://wa.me/5491150274251" target="_blank" rel="noopener noreferrer" className="hover:underline">WHATSAPP</Link></li>
             </ul>
           </div>
 
