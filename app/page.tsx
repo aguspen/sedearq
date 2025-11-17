@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { ContactForm } from './components/ContactForm'
 import { HeroCarousel } from './components/HeroCarousel'
+import { EnObraSection } from './components/EnObraSection'
 import Link from 'next/link'
 
 const images = [
@@ -155,21 +156,67 @@ export default function Home() {
           <div className="h-24 w-px bg-gray-400" />
         </div>
         {/* Obras Images Grid */}
-        <div className="w-full max-w-[calc(100%-24px)] mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
-          {[...Array(6)].map((_, i) => (
-            <div key={i} className="relative w-full aspect-[2/1.5] overflow-hidden group">
-              <Image
-                src="/obraprueba.jpg" 
-                alt={`Obra ${i + 1}`}
-                fill
-                className="object-cover transition-all duration-300"
-              />
-              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
-                <span className="text-white text-lg font-montserrat tracking-widest">OBRA {i + 1}</span>
-              </div>
-            </div>
-          ))}
-        </div>
+        <EnObraSection
+          obras={[
+            {
+              nombre: 'CASA 1E4',
+              imagenes: [
+                '/CASA 1E4 - EN OBRA 1.JPEG',
+                '/CASA 1E4 - EN OBRA 2.JPEG',
+              ],
+            },
+            {
+              nombre: 'CASA AB',
+              imagenes: [
+                '/CASA AB - EN OBRA 1.jpeg',
+                '/CASA AB - EN OBRA 2.jpg',
+                '/CASA AB - EN OBRA 3.jpg',
+                '/CASA AB - EN OBRA 4.jpg',
+                '/CASA AB - EN OBRA 5.jpg',
+              ],
+            },
+            {
+              nombre: 'CASA CS',
+              imagenes: [
+                '/CASA CS - EN OBRA 1.jpg',
+                '/CASA CS - EN OBRA 2.jpg',
+              ],
+            },
+            {
+              nombre: 'CASA FC',
+              imagenes: [
+                '/CASA FC - EN OBRA 1.JPEG',
+                '/CASA FC - EN OBRA 2.JPEG',
+                '/CASA FC - EN OBRA 3.JPEG',
+              ],
+            },
+            {
+              nombre: 'CASA GOLF',
+              imagenes: [
+                '/CASA GOLF - EN OBRA 1.jpeg',
+                '/CASA GOLF - EN OBRA 2.jpeg',
+                '/CASA GOLF - EN OBRA 3.jpeg',
+                '/CASA GOLF - EN OBRA 4.jpeg',
+                '/CASA GOLF - EN OBRA 5.jpeg',
+                '/CASA GOLF - EN OBRA 6.jpeg',
+                '/CASA GOLF - EN OBRA 7.jpeg',
+                '/CASA GOLF - EN OBRA 8.jpeg',
+                '/CASA GOLF - EN OBRA 9.jpeg',
+                '/CASA GOLF - EN OBRA 10.JPEG',
+                '/CASA GOLF - EN OBRA 11.JPEG',
+              ],
+            },
+            {
+              nombre: 'CASA JM',
+              imagenes: [
+                '/CASA JM - EN OBRA 1.JPEG',
+                '/CASA JM - EN OBRA 2.jpeg',
+                '/CASA JM - EN OBRA 3.jpeg',
+                '/CASA JM - EN OBRA 4.jpeg',
+              ],
+            },
+          ]}
+        />
       </section>
       <ContactForm />
     </main>
