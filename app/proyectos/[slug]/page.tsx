@@ -75,7 +75,9 @@ const ProyectoPage = ({ params }: Props) => {
           alt={proyecto.titulo}
           fill
           className="object-cover"
-          style={{ objectPosition: currentSlug === 'casa-golf' ? 'center' : 'bottom' }}
+          style={{ 
+            objectPosition: currentSlug === 'casa-golf' ? 'center' : currentSlug === 'casa-jm' ? 'center 65%' : currentSlug === 'casa-g' ? 'center 55%' : (currentSlug === 'casa-sj' || currentSlug === 'casa-bg') ? 'center 78%' : currentSlug === 'casa-rz' ? 'center 55%' : 'bottom'
+          }}
           priority
           sizes="100vw"
         />

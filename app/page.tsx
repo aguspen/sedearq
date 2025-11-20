@@ -7,12 +7,12 @@ import Link from 'next/link'
 const images = [
   // 3 Proyectos
   {
-    src: '/CASAJJ-020.jpg',
+    src: '/CASA-JJ-0.jpg',
     alt: 'Casa JJ',
     url: '/proyectos/casa-jj',
   },
   {
-    src: '/CASAJM-041.jpg',
+    src: '/CASA-JM-0.jpg',
     alt: 'Casa JM',
     url: '/proyectos/casa-jm',
     objectPosition: 'bottom',
@@ -49,7 +49,7 @@ const proyectos = [
       'Estancias de Pilar, Pilar, Pcia. de Buenos Aires',
       '2022',
     ],
-    img: '/casa-jj-1.jpg',
+    img: '/CASA-JJ-0.jpg',
     imgAlt: 'Casa JJ',
   },
   {
@@ -60,7 +60,7 @@ const proyectos = [
       'Barrio: El Ocho - Pilar, Prov. de Buenos Aires',
       '2022',
     ],
-    img: '/CASAJM-041.jpg',
+    img: '/CASA-JM-0.jpg',
     imgAlt: 'Casa JM',
   },
 ]
