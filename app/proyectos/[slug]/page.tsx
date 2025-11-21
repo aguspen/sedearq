@@ -20,7 +20,18 @@ const ProyectoPage = ({ params }: Props) => {
   const currentSlug = unwrappedParams.slug
 
   const proyecto = proyectos.find(p => p.slug === currentSlug)
-  const otherProyectos = proyectos.filter(p => p.slug !== currentSlug).slice(0, 3) // Get up to 3 other projects
+  
+  // Shuffle function to randomize projects
+  const shuffleArray = <T,>(array: T[]): T[] => {
+    const shuffled = [...array]
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]
+    }
+    return shuffled
+  }
+  
+  const otherProyectos = shuffleArray(proyectos.filter(p => p.slug !== currentSlug)).slice(0, 3) // Get up to 3 random other projects
 
   const [isCarouselOpen, setIsCarouselOpen] = useState(false)
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -76,7 +87,7 @@ const ProyectoPage = ({ params }: Props) => {
           fill
           className="object-cover"
           style={{ 
-            objectPosition: currentSlug === 'casa-golf' ? 'center' : currentSlug === 'casa-jm' ? 'center 65%' : currentSlug === 'casa-g' ? 'center 55%' : (currentSlug === 'casa-sj' || currentSlug === 'casa-bg') ? 'center 78%' : currentSlug === 'casa-rz' ? 'center 55%' : 'bottom'
+            objectPosition: currentSlug === 'casa-golf' ? 'center' : currentSlug === 'casa-jm' ? 'center 65%' : currentSlug === 'casa-g' ? 'center 55%' : (currentSlug === 'casa-sj' || currentSlug === 'casa-bg') ? 'center 78%' : currentSlug === 'casa-rz' ? 'center 55%' : (currentSlug === 'reforma-arcos' || currentSlug === 'reforma-callao' || currentSlug === 'reforma-ayacucho' || currentSlug === 'reforma-talcahuano' || currentSlug === 'reforma-pena-a') ? 'center 60%' : 'bottom'
           }}
           priority
           sizes="100vw"

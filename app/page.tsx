@@ -24,17 +24,17 @@ const images = [
   },
   // 3 Reformas
   {
-    src: '/RFTALCAHUANO-004.JPEG',
+    src: '/RF-TALCAHUANO-0.JPEG',
     alt: 'Reforma Talcahuano',
     url: '/proyectos/reforma-talcahuano',
   },
   {
-    src: '/RFAYACUCHO-010.jpg',
+    src: '/RF-AYACUCHO-0.jpg',
     alt: 'Reforma Ayacucho',
     url: '/proyectos/reforma-ayacucho',
   },
   {
-    src: '/RFARCOS-004.JPEG',
+    src: '/RF-ARCOS-0.JPEG',
     alt: 'Reforma Arcos',
     url: '/proyectos/reforma-arcos',
   },
@@ -117,7 +117,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-0 relative min-h-[810px]">
           {/* Arriba Izquierda: Imagen REFORMA CALLAO */}
           <Link href="/proyectos/reforma-callao" className="relative w-full h-64 md:h-[340px] md:rounded-none md:pl-0 overflow-hidden group">
-            <Image src="/casa-jj-1.jpg" alt="Reforma Callao" fill className="object-cover transition-all duration-300 group-hover:grayscale" style={{objectPosition: 'center'}} />
+            <Image src="/RF-CALLAO-0.jpg" alt="Reforma Callao" fill className="object-cover transition-all duration-300 group-hover:grayscale" style={{objectPosition: 'center'}} />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
               <span className="text-white text-lg font-montserrat tracking-widest">VER PROYECTO</span>
             </div>
@@ -140,7 +140,7 @@ export default function Home() {
           </div>
           {/* Abajo Derecha: Imagen REFORMA TALCAHUANO */}
           <Link href="/proyectos/reforma-talcahuano" className="relative w-full h-64 md:h-[340px] md:rounded-none md:pr-0 overflow-hidden group">
-            <Image src="/RFTALCAHUANO-004.JPEG" alt="Reforma Talcahuano" fill className="object-cover transition-all duration-300 group-hover:grayscale" style={{objectPosition: 'center'}} />
+            <Image src="/RF-TALCAHUANO-0.JPEG" alt="Reforma Talcahuano" fill className="object-cover transition-all duration-300 group-hover:grayscale" style={{objectPosition: 'center'}} />
             <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/30">
               <span className="text-white text-lg font-montserrat tracking-widest">VER PROYECTO</span>
             </div>

@@ -7,9 +7,6 @@ import { WhatsAppButton } from './components/WhatsAppButton'
 export const metadata: Metadata = {
   title: 'SedeArq',
   description: 'SedeArq - Tu plataforma de arquitectura',
-  icons: {
-    icon: '/favicon-sede.jpg',
-  },
 }
 
 export default function RootLayout({
