@@ -5,38 +5,41 @@ import { EnObraSection } from './components/EnObraSection'
 import Link from 'next/link'
 
 const images = [
-  // 3 Proyectos
-  {
-    src: '/CASA-JJ-0.jpg',
-    alt: 'Casa JJ',
-    url: '/proyectos/casa-jj',
-  },
   {
     src: '/CASA-JM-0.jpg',
     alt: 'Casa JM',
     url: '/proyectos/casa-jm',
-    objectPosition: 'bottom',
+    objectPosition: 'center 65%',
   },
   {
     src: '/CASAGOLFRENDER-003.JPG',
     alt: 'Casa Golf',
     url: '/proyectos/casa-golf',
-  },
-  // 3 Reformas
-  {
-    src: '/RF-TALCAHUANO-0.JPEG',
-    alt: 'Reforma Talcahuano',
-    url: '/proyectos/reforma-talcahuano',
+    objectPosition: 'center',
   },
   {
-    src: '/RF-AYACUCHO-0.jpg',
-    alt: 'Reforma Ayacucho',
-    url: '/proyectos/reforma-ayacucho',
+    src: '/CASA-JJ-0.jpg',
+    alt: 'Casa JJ',
+    url: '/proyectos/casa-jj',
+    objectPosition: 'bottom',
+  },
+  {
+    src: '/CASA-G-0.jpg',
+    alt: 'Casa G',
+    url: '/proyectos/casa-g',
+    objectPosition: 'center 55%',
+  },
+  {
+    src: '/RF-CALLAO-0.jpg',
+    alt: 'Reforma Callao',
+    url: '/proyectos/reforma-callao',
+    objectPosition: 'center 60%',
   },
   {
     src: '/RF-ARCOS-0.JPEG',
     alt: 'Reforma Arcos',
     url: '/proyectos/reforma-arcos',
+    objectPosition: 'center 60%',
   },
 ]
 
