@@ -87,7 +87,7 @@ const ProyectoPage = ({ params }: Props) => {
           fill
           className="object-cover"
           style={{ 
-            objectPosition: currentSlug === 'casa-golf' ? 'center' : currentSlug === 'casa-jm' ? 'center 65%' : currentSlug === 'casa-g' ? 'center 55%' : (currentSlug === 'casa-sj' || currentSlug === 'casa-bg') ? 'center 78%' : currentSlug === 'casa-rz' ? 'center 55%' : (currentSlug === 'reforma-arcos' || currentSlug === 'reforma-callao' || currentSlug === 'reforma-ayacucho' || currentSlug === 'reforma-talcahuano' || currentSlug === 'reforma-pena-a') ? 'center 60%' : 'bottom'
+            objectPosition: currentSlug === 'casa-golf' ? 'center' : currentSlug === 'casa-jm' ? 'center 65%' : currentSlug === 'casa-jj' ? 'center 50%' : currentSlug === 'casa-g' ? 'center 55%' : (currentSlug === 'casa-sj' || currentSlug === 'casa-bg') ? 'center 78%' : currentSlug === 'casa-rz' ? 'center 55%' : (currentSlug === 'reforma-arcos' || currentSlug === 'reforma-callao') ? 'center 50%' : (currentSlug === 'reforma-ayacucho' || currentSlug === 'reforma-talcahuano' || currentSlug === 'reforma-pena-a') ? 'center 60%' : 'bottom'
           }}
           priority
           sizes="100vw"

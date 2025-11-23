@@ -37,6 +37,7 @@ export const proyectos: Proyecto[] = [
       '/CASA-JJ-16.jpg',
       '/CASA-JJ-17.jpg',
       '/CASA-JJ-18.jpg',
+      '/CASA-JJ-0.jpg',
     ],
   },
   {

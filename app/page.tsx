@@ -21,7 +21,7 @@ const images = [
     src: '/CASA-JJ-0.jpg',
     alt: 'Casa JJ',
     url: '/proyectos/casa-jj',
-    objectPosition: 'bottom',
+    objectPosition: 'center 50%',
   },
   {
     src: '/CASA-G-0.jpg',
@@ -33,13 +33,13 @@ const images = [
     src: '/RF-CALLAO-0.jpg',
     alt: 'Reforma Callao',
     url: '/proyectos/reforma-callao',
-    objectPosition: 'center 60%',
+    objectPosition: 'center 50%',
   },
   {
     src: '/RF-ARCOS-0.JPEG',
     alt: 'Reforma Arcos',
     url: '/proyectos/reforma-arcos',
-    objectPosition: 'center 60%',
+    objectPosition: 'center 50%',
   },
 ]
 
