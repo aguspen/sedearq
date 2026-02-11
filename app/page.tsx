@@ -12,10 +12,10 @@ const images = [
     objectPosition: 'center 65%',
   },
   {
-    src: '/CASAGOLFRENDER-003.JPG',
+    src: '/CASA-GOLF-1.jpg',
     alt: 'Casa Golf',
     url: '/proyectos/casa-golf',
-    objectPosition: 'center',
+    objectPosition: 'center 65%',
   },
   {
     src: '/CASA-JJ-0.jpg',
