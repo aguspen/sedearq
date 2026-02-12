@@ -88,7 +88,7 @@ export const proyectos: Proyecto[] = [
   {
     slug: 'casa-golf',
     titulo: 'CASA GOLF',
-    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    descripcion: 'PROYECTO Y DIRECCIÓN DE OBRA',
     detalles: [
       'Barrio: Estancia Villa Maria - Máximo Paz, Prov. de Buenos Aires',
       '442 m2',
@@ -239,7 +239,7 @@ export const proyectos: Proyecto[] = [
   {
     slug: 'casa-ab',
     titulo: 'CASA AB',
-    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    descripcion: 'PROYECTO Y DIRECCIÓN DE OBRA',
     detalles: [
       'Barrio: Estancia Villa Maria - Máximo Paz, Prov. de Buenos Aires',
       '360 m2',
@@ -289,8 +289,8 @@ export const proyectos: Proyecto[] = [
   },
   {
     slug: 'casa-valeria',
-    titulo: 'CASA VALERIA',
-    descripcion: 'PROYECTO, DIRECCIÓN Y CONSTRUCCIÓN',
+    titulo: 'CASA VB',
+    descripcion: 'PROYECTO Y DIRECCIÓN DE OBRA',
     detalles: [
       'Barrio: Estancia Villa Maria - Máximo Paz, Prov. de Buenos Aires',
       '215 m2',
