@@ -19,10 +19,10 @@ export const proyectos: Proyecto[] = [
     ],
     hero: '/CASA-JJ-0.jpg',
     imagenes: [
-      '/CASA-JJ-1.jpg',
-      '/CASA-JJ-2.jpg',
-      '/CASA-JJ-3.jpg',
-      '/CASA-JJ-4.jpg',
+      '/casa-jj-1.jpg',
+      '/casa-jj-2.jpg',
+      '/casa-jj-3.jpg',
+      '/casa-jj-4.jpg',
       '/CASA-JJ-5.jpg',
       '/CASA-JJ-6.jpg',
       '/CASA-JJ-7.jpg',
@@ -51,7 +51,7 @@ export const proyectos: Proyecto[] = [
     ],
     hero: '/CASA-JM-0.jpg',
     imagenes: [
-      '/CASA-JM-1.jpg',
+      '/casa-jm-1.jpg',
       '/CASA-JM-2.jpg',
       '/CASA-JM-3.jpg',
       '/CASA-JM-4.jpg',
