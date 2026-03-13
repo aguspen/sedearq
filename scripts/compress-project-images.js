@@ -8,6 +8,8 @@ const PREFIXES = [
   'CASA-AB-',
   'CASA-FC-',
   'CASA-VALERIA-',
+  'CASA-JJ-',
+  'CASA-JM-',
 ];
 
 // Configuración básica de compresión
